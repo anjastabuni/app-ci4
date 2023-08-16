@@ -32,6 +32,11 @@ $routes->set404Override();
 $routes->get('/', 'Pages::index');
 $routes->get('/pages/index', 'Pages::index');
 $routes->get('/pages/about', 'Pages::about');
+$routes->get('/pages/contact', 'Pages::contact');
+$routes->get('/comics/index', 'Comics::index');
+$routes->get('/comics/create', 'Comics::create');
+$routes->get('/comics/(:segment)', 'Comics::detail/$1');
+
 
 /*
  * --------------------------------------------------------------------
